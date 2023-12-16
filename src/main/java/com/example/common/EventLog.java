@@ -28,7 +28,7 @@ public class EventLog {
     public void log(String event) {
         events.add(event);
         while (events.size() > maxSize) {
-            events.removeFirst();
+            events.remove(0);
         }
     }
 
